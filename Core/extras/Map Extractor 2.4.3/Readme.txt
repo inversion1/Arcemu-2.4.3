@@ -1,0 +1,1 @@
+Place this file in your root WoW directory, run it and it will extract the map files from the MPQs into a folder called "maps"

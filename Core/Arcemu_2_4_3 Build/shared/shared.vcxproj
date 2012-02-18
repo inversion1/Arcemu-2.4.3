@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E806B793-B175-411E-9B65-25C19A2249C6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>shared</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>..\..\MySQL\include;..\..\OpenSSL\include;..\..\src\arcemu-shared;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\MySQL\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\arcemu_getopt.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\BigNumber.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\MD5.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\Sha1.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\WowCrypt.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CallBack.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Config\Config.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CoreMemoryAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CoreMemoryAllocator_Core.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CrashHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\crc32.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CThreads.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\CreateInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\Database.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBC.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\dbcfile.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBCStores.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\MySQLDatabase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\PostgresDatabase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\SQLiteDatabase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Log.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MemoryLeaks.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MersenneTwister.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\CircularBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\Socket.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketFreeBSD.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketLinux.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrFreeBSD.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrLinux.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrWin32.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOpsFreeBSD.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOpsLinux.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOpsWin32.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketWin32.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\PacketLog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\StackWalker.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Mutex.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\ThreadPool.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\arcemuConfig.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\arcemu_getopt.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\AuthCodes.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\BigNumber.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\MD5.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\Sha1.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\WowCrypt.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\ByteBuffer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CallBack.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CircularQueue.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Common.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Config\Config.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Config\ConfigEnv.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CrashHandler.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\crc32.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CThreads.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\Database.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DatabaseEnv.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DataStore.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBC.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\dbcfile.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBCStores.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\Field.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\MySQLDatabase.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\PostgresDatabase.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\SQLiteDatabase.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Errors.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\FastQueue.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\LocationVector.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Log.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MemoryLeaks.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MersenneTwister.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\CircularBuffer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\ListenSocketFreeBSD.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\ListenSocketLinux.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\ListenSocketWin32.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\Network.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\Socket.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketDefines.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrFreeBSD.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrLinux.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrWin32.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOps.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\New-Bytebuffer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\NGLog.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\PacketLog.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\PreallocatedQueue.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\RC4Engine.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\RealmPacket.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Singleton.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\SmartPointer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\StackBuffer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\StackWalker.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Storage.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\svn_revision.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Condition.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Guard.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\LockedQueue.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Mutex.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Queue.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\RWLock.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Threading.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\ThreadPool.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\ThreadStarter.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Timer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Util.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\WorldPacket.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\WoWGuid.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

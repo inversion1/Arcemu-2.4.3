@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\arcemu_getopt.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\BigNumber.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CallBack.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\CircularBuffer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Config\Config.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CoreMemoryAllocator.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CoreMemoryAllocator_Core.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CrashHandler.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\crc32.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\CreateInterface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CThreads.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\Database.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBC.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\dbcfile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBCStores.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Log.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\MD5.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MemoryLeaks.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MersenneTwister.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Mutex.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\MySQLDatabase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\PacketLog.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\PostgresDatabase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\Sha1.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\Socket.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketFreeBSD.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketLinux.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrFreeBSD.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrLinux.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrWin32.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOpsFreeBSD.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOpsLinux.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOpsWin32.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketWin32.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\SQLiteDatabase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\StackWalker.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\ThreadPool.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Util.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\WowCrypt.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\arcemu_getopt.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\arcemuConfig.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\AuthCodes.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\BigNumber.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\ByteBuffer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CallBack.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\CircularBuffer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CircularQueue.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Common.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Condition.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Config\Config.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Config\ConfigEnv.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CrashHandler.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\crc32.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\CThreads.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\Database.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DatabaseEnv.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DataStore.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBC.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\dbcfile.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\DBCStores.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Errors.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\FastQueue.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\Field.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Guard.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\ListenSocketFreeBSD.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\ListenSocketLinux.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\ListenSocketWin32.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\LocationVector.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\LockedQueue.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Log.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\MD5.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MemoryLeaks.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\MersenneTwister.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Mutex.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\MySQLDatabase.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\Network.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\New-Bytebuffer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\NGLog.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\PacketLog.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\PostgresDatabase.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\PreallocatedQueue.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Queue.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\RC4Engine.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\RealmPacket.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\RWLock.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\Sha1.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Singleton.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\SmartPointer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\Socket.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketDefines.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrFreeBSD.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrLinux.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketMgrWin32.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Network\SocketOps.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Database\SQLiteDatabase.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\StackBuffer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\StackWalker.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Storage.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\svn_revision.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\Threading.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\ThreadPool.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Threading\ThreadStarter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Timer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Util.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\WorldPacket.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\Auth\WowCrypt.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-shared\WoWGuid.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{ca70b65c-8c5e-435d-83e9-3763b68df62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7d81fa4a-518e-4819-adf4-e522f8abef9c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

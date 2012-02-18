@@ -1,0 +1,27 @@
+﻿Build started 1/30/2012 12:43:54 PM.
+     1>Project "C:\Emulation\Arcemu 2.4.3\Arcemu_2_4_3 Build\Arcemu_2_4_3\Arcemu_2_4_3.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Logonserver.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\AccountCache.cpp" "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\AuthSocket.cpp" "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\AutoPatcher.cpp" "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\LogonCommServer.cpp" "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\LogonConsole.cpp" "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\LogonOpcodes.cpp" "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.cpp" "..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-logonserver\Main.cpp"
+         AccountCache.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+         AuthSocket.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+         AutoPatcher.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+         LogonCommServer.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+         LogonConsole.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+         LogonOpcodes.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+         LogonStdAfx.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+         Main.cpp
+     1>c:\emulation\arcemu 2.4.3\src\arcemu-logonserver\LogonStdAfx.h(29): fatal error C1083: Cannot open include file: 'Common.h': No such file or directory
+     1>Done Building Project "C:\Emulation\Arcemu 2.4.3\Arcemu_2_4_3 Build\Arcemu_2_4_3\Arcemu_2_4_3.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.24

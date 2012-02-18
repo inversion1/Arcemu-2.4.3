@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EC4845C-B99E-4740-945A-91D082D69E4F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>World</RootNamespace>
+    <ProjectName>Worldserver</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\OpenSSL\include;..\..\src\arcemu-shared;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\OpenSSL\lib;..\..\MySQL\lib;..\..\bin\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\..\Server\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_OUTPUT_SENT_PACKETS_TO_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;libmysql.lib;libeay32.lib;dbghelp.lib;zlib.lib;pcre.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\AddonMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\AIAHealSupport.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\AIInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\AlteracValley.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ArathiBasin.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\AreaTrigger.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Arenas.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ArenaTeam.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\AuctionHouse.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\AuctionMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\BattlegroundCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\BattlegroundHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\BattlegroundMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\CConsole.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Channel.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ChannelHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\CharacterHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Chat.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ChatHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ClusterInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\CollideInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\CombatHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\CommonScheduleThread.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ConsoleCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ConsoleListener.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Container.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Corpse.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Creature.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\DatabaseCleaner.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\DayWatcherThread.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\debugcmds.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\DuelHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\DynamicObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\EventableObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\EventMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\EyeOfTheStorm.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\faction.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\GameObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\GMTicket.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\GMTicketCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Group.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\GroupHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Guild.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\GuildHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\HonorHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\InstanceCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Item.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ItemHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ItemInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Level0.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Level1.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Level2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Level3.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\LfgHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\LfgMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\LocalizationMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\LogonCommClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\LogonCommHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\LootMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\MailSystem.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Map.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\MapCell.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\MapMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\MapScriptInterface.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Master.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\MiscHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\MovementHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\NPCHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Object.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ObjectMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ObjectStorage.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Opcodes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Pet.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\PetHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Player.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\PlayerPacketWrapper.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ProcCondHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\QueryHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Quest.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\QuestCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\QuestHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\QuestMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\RaidHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\RecallCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ReputationHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\ScriptMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SkillHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SocialHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SpeedDetector.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Spell.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SpellAuras.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SpellEffects.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SpellFixes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SpellHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\SpellTarget.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Stats.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\TaxiHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\TaxiMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\TerrainMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\TradeHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\TransporterHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\Unit.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\VoiceChatClientSocket.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\VoiceChatHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WarsongGulch.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WayPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WeatherMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WordFilter.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WorkdSocketCluster.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WorkerServerClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\World.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WorldCreator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WorldRunnable.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WorldSession.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\Emulation\Arcemu 2.4.3\src\arcemu-world\WorldSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\shared\shared.vcxproj">
+      <Project>{e806b793-b175-411e-9b65-25c19a2249c6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\arcemu-world\AddonMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\AIAHealSupport.h" />
+    <ClInclude Include="..\..\src\arcemu-world\AIInterface.h" />
+    <ClInclude Include="..\..\src\arcemu-world\AlteracValley.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ArathiBasin.h" />
+    <ClInclude Include="..\..\src\arcemu-world\AreaTrigger.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Arenas.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ArenaTeam.h" />
+    <ClInclude Include="..\..\src\arcemu-world\AuctionHouse.h" />
+    <ClInclude Include="..\..\src\arcemu-world\AuctionMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\BaseConsole.h" />
+    <ClInclude Include="..\..\src\arcemu-world\BattlegroundMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\CConsole.h" />
+    <ClInclude Include="..\..\src\arcemu-world\CellHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Channel.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ChannelMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Chat.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ClusterInterface.h" />
+    <ClInclude Include="..\..\src\arcemu-world\CollideInterface.h" />
+    <ClInclude Include="..\..\src\arcemu-world\CommonScheduleThread.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ConsoleCommands.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Container.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Corpse.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Creature.h" />
+    <ClInclude Include="..\..\src\arcemu-world\DatabaseCleaner.h" />
+    <ClInclude Include="..\..\src\arcemu-world\DayWatcherThread.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Definitions.h" />
+    <ClInclude Include="..\..\src\arcemu-world\DynamicObject.h" />
+    <ClInclude Include="..\..\src\arcemu-world\EventableObject.h" />
+    <ClInclude Include="..\..\src\arcemu-world\EventMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\EyeOfTheStorm.h" />
+    <ClInclude Include="..\..\src\arcemu-world\faction.h" />
+    <ClInclude Include="..\..\src\arcemu-world\GameObject.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Group.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Guild.h" />
+    <ClInclude Include="..\..\src\arcemu-world\HonorHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Item.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ItemInterface.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ItemPrototype.h" />
+    <ClInclude Include="..\..\src\arcemu-world\LfgMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\LocalizationMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\LogonCommClient.h" />
+    <ClInclude Include="..\..\src\arcemu-world\LogonCommHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\LootMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\MailSystem.h" />
+    <ClInclude Include="..\..\src\arcemu-world\MainServerDefines.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Map.h" />
+    <ClInclude Include="..\..\src\arcemu-world\MapCell.h" />
+    <ClInclude Include="..\..\src\arcemu-world\MapMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\MapScriptInterface.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Master.h" />
+    <ClInclude Include="..\..\src\arcemu-world\MiscHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\NameTables.h" />
+    <ClInclude Include="..\..\src\arcemu-world\NPCHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Object.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ObjectMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ObjectStorage.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Opcodes.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Packets.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Pet.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Player.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ProcCondHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Quest.h" />
+    <ClInclude Include="..\..\src\arcemu-world\QuestMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ScriptMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\ScriptSetup.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Skill.h" />
+    <ClInclude Include="..\..\src\arcemu-world\SkillNameMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\SpeedDetector.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Spell.h" />
+    <ClInclude Include="..\..\src\arcemu-world\SpellAuras.h" />
+    <ClInclude Include="..\..\src\arcemu-world\SpellFailure.h" />
+    <ClInclude Include="..\..\src\arcemu-world\SpellNameHashes.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Stats.h" />
+    <ClInclude Include="..\..\src\arcemu-world\StdAfx.h" />
+    <ClInclude Include="..\..\src\arcemu-world\TaxiMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\TerrainMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\TransporterHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\Unit.h" />
+    <ClInclude Include="..\..\src\arcemu-world\UpdateFields.h" />
+    <ClInclude Include="..\..\src\arcemu-world\UpdateMask.h" />
+    <ClInclude Include="..\..\src\arcemu-world\VoiceChatClientSocket.h" />
+    <ClInclude Include="..\..\src\arcemu-world\VoiceChatHandler.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WarsongGulch.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WeatherMgr.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WordFilter.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WorkerServerClient.h" />
+    <ClInclude Include="..\..\src\arcemu-world\World.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WorldCreator.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WorldRunnable.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WorldSession.h" />
+    <ClInclude Include="..\..\src\arcemu-world\WorldSocket.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
