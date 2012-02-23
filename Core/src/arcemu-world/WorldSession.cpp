@@ -157,7 +157,7 @@ int WorldSession::Update(uint32 InstanceID)
 				}
 				else
 				{
-					std::cout << "Received opcode " << LookupName(packet->GetOpcode(), g_worldOpcodeNames) << std::endl;
+					//std::cout << "Received opcode " << LookupName(packet->GetOpcode(), g_worldOpcodeNames) << std::endl;
 					(this->*Handler->handler)(*packet);
 				}
 			}

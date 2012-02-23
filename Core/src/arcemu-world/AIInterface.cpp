@@ -1159,7 +1159,8 @@ void AIInterface::_UpdateCombat(uint32 p_time)
 					//Dword: where is the offhand code?
 					if(m_Unit->isAttackReady(false) && !m_fleeTimer)
 					{
-						m_creatureState = ATTACKING;
+						if (m_creatureState != MOVING)
+							m_creatureState = ATTACKING;
 						bool infront = m_Unit->isInFront(GetNextTarget());
 
 						if(!infront) // set InFront
@@ -1247,7 +1248,8 @@ void AIInterface::_UpdateCombat(uint32 p_time)
 					//FIXME: offhand shit. Dword: Why do we need offhand code for ranged?
 					if(m_Unit->isAttackReady(false) && !m_fleeTimer)
 					{
-						m_creatureState = ATTACKING;
+						if (m_creatureState != MOVING)
+							m_creatureState = ATTACKING;
 						bool infront = m_Unit->isInFront(GetNextTarget());
 
 						if(!infront) // set InFront
@@ -2377,7 +2379,8 @@ void AIInterface::MoveTo(float x, float y, float z, float o)
 
 	if (m_creatureState == MOVING)
 	{ // Dword: to prevent movement stalls while chasing, we need to send the movement packet before the creature reaches its destination
-		if (GetNextTarget() && m_Unit->GetDistanceSq(m_destinationX, m_destinationY, m_destinationZ) < 9.0f)
+		if (GetNextTarget()
+			&& m_Unit->GetDistanceSq(m_destinationX, m_destinationY, m_destinationZ) < 9.0f)
 		{ // a distance of 3 yards away from target destination seems to leave sufficient room for sending the packet
 			UpdateMove();
 		}
